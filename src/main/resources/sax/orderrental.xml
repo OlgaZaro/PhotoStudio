@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<photoStudio>
+    <orderRentals>
+        <orderRental id="1">
+            <orderPrice>950</orderPrice>
+            <customerId>1</customerId>
+        </orderRental>
+        <orderRental id="2">
+            <orderPrice>450</orderPrice>
+            <customerId>3</customerId>
+        </orderRental>
+        <orderRental id="3">
+            <orderPrice>700</orderPrice>
+            <customerId>5</customerId>
+        </orderRental>
+        <orderRental id="4">
+            <orderPrice>1000</orderPrice>
+            <customerId>2</customerId>
+        </orderRental>
+        <orderRental id="5">
+            <orderPrice>850</orderPrice>
+            <customerId>4</customerId>
+        </orderRental>
+    </orderRentals>
+</photoStudio>

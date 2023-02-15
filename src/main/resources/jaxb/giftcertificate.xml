@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<request>
+    <GiftCertificate id="1">
+        <certificatePrice>2000</certificatePrice>
+        <serviceOrderId>2</serviceOrderId>
+    </GiftCertificate>
+    <GiftCertificate id="2">
+        <certificatePrice>3000</certificatePrice>
+        <serviceOrderId>1</serviceOrderId>
+    </GiftCertificate>
+    <GiftCertificate id="3">
+        <certificatePrice>5000</certificatePrice>
+        <serviceOrderId>3</serviceOrderId>
+    </GiftCertificate>
+</request>

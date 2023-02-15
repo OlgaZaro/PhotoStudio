@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<request>
+    <subscription>
+        <customerId>3</customerId>
+        <id>1</id>
+        <subscriptionPrice>5550</subscriptionPrice>
+        <title>vip</title>
+    </subscription>
+    <subscription>
+        <customerId>4</customerId>
+        <id>2</id>
+        <subscriptionPrice>4450</subscriptionPrice>
+        <title>universal</title>
+    </subscription>
+    <subscription>
+        <customerId>2</customerId>
+        <id>3</id>
+        <subscriptionPrice>3350</subscriptionPrice>
+        <title>premium</title>
+    </subscription>
+    <subscription>
+        <customerId>1</customerId>
+        <id>4</id>
+        <subscriptionPrice>2250</subscriptionPrice>
+        <title>platinum</title>
+    </subscription>
+    <subscription>
+        <customerId>5</customerId>
+        <id>5</id>
+        <subscriptionPrice>1150</subscriptionPrice>
+        <title>standart</title>
+    </subscription>
+</request>

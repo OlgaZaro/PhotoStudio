@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<request>
+    <OrderRental id="1">
+        <customerId>1</customerId>
+        <orderPrice>950</orderPrice>
+    </OrderRental>
+    <OrderRental id="2">
+        <customerId>3</customerId>
+        <orderPrice>450</orderPrice>
+    </OrderRental>
+    <OrderRental id="3">
+        <customerId>5</customerId>
+        <orderPrice>700</orderPrice>
+    </OrderRental>
+    <OrderRental id="4">
+        <customerId>2</customerId>
+        <orderPrice>1000</orderPrice>
+    </OrderRental>
+    <OrderRental id="5">
+        <customerId>4</customerId>
+        <orderPrice>850</orderPrice>
+    </OrderRental>
+</request>

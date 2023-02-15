@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<request>
+    <customer>
+        <firstName>Jon</firstName>
+        <id>1</id>
+        <lastName>Kennel</lastName>
+        <mail>jon@gmail.com</mail>
+        <phone>380503344555</phone>
+    </customer>
+    <customer>
+        <firstName>Martin</firstName>
+        <id>2</id>
+        <lastName>Tempt</lastName>
+        <mail>kelv@gmail.com</mail>
+        <phone>380507755997</phone>
+    </customer>
+    <customer>
+        <firstName>Jessy</firstName>
+        <id>3</id>
+        <lastName>Alenti</lastName>
+        <mail>jes@gmail.com</mail>
+        <phone>380502233445</phone>
+    </customer>
+    <customer>
+        <firstName>Tim</firstName>
+        <id>4</id>
+        <lastName>Jonson</lastName>
+        <mail>tim@gmail.com</mail>
+        <phone>380508844333</phone>
+    </customer>
+    <customer>
+        <firstName>Alina</firstName>
+        <id>5</id>
+        <lastName>Kivi</lastName>
+        <mail>ali@gmail.com</mail>
+        <phone>380505553388</phone>
+    </customer>
+</request>

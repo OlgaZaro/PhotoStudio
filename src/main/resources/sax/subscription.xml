@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<photoStudio>
+<subscriptions>
+    <subscription id="1">
+        <title>vip</title>
+        <subscriptionPrice>5550</subscriptionPrice>
+        <customerId>3</customerId>
+    </subscription>
+    <subscription id="2">
+        <title>universal</title>
+        <subscriptionPrice>4450</subscriptionPrice>
+        <customerId>4</customerId>
+    </subscription>
+    <subscription id="3">
+        <title>premium</title>
+        <subscriptionPrice>3350</subscriptionPrice>
+        <customerId>2</customerId>
+    </subscription>
+    <subscription id="4">
+        <title>platinum</title>
+        <subscriptionPrice>2250</subscriptionPrice>
+        <customerId>1</customerId>
+    </subscription>
+    <subscription id="5">
+        <title>standart</title>
+        <subscriptionPrice>1150</subscriptionPrice>
+        <customerId>5</customerId>
+    </subscription>
+</subscriptions>
+</photoStudio>

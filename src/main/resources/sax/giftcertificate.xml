@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<photoStudio>
+    <giftCertificates>
+        <giftCertificate id="1">
+            <certificatePrice>2000</certificatePrice>
+            <serviceOrderId>2</serviceOrderId>
+        </giftCertificate>
+        <giftCertificate id="2">
+            <certificatePrice>3000</certificatePrice>
+            <serviceOrderId>1</serviceOrderId>
+        </giftCertificate>
+        <giftCertificate id="3">
+            <certificatePrice>5000</certificatePrice>
+            <serviceOrderId>3</serviceOrderId>
+        </giftCertificate>
+    </giftCertificates>
+</photoStudio>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<photoStudio>
+    <customers>
+        <customer id="1">
+            <firstName>Jon</firstName>
+            <lastName>Kennel</lastName>
+            <phone>380503344555</phone>
+            <mail>jon@gmail.com</mail>
+        </customer>
+        <customer id="2">
+            <firstName>Martin</firstName>
+            <lastName>Tempt</lastName>
+            <phone>380507755997</phone>
+            <mail>kelv@gmail.com</mail>
+        </customer>
+        <customer id="3">
+            <firstName>Jessy</firstName>
+            <lastName>Alenti</lastName>
+            <phone>380502233445</phone>
+            <mail>jes@gmail.com</mail>
+        </customer>
+        <customer id="4">
+            <firstName>Tim</firstName>
+            <lastName>Jonson</lastName>
+            <phone>380508844333</phone>
+            <mail>tim@gmail.com</mail>
+        </customer>
+        <customer id="5">
+            <firstName>Alina</firstName>
+            <lastName>Kivi</lastName>
+            <phone>380505553388</phone>
+            <mail>ali@gmail.com</mail>
+        </customer>
+    </customers>
+    <serviceOrders>
+        <serviceOrder id="1">
+            <orderPrice>1500</orderPrice>
+            <customerId>5</customerId>
+        </serviceOrder>
+        <serviceOrder id="2">
+            <orderPrice>1200</orderPrice>
+            <customerId>2</customerId>
+        </serviceOrder>
+        <serviceOrder id="3">
+            <orderPrice>1700</orderPrice>
+            <customerId>4</customerId>
+        </serviceOrder>
+        <serviceOrder id="4">
+            <orderPrice>1800</orderPrice>
+            <customerId>1</customerId>
+        </serviceOrder>
+        <serviceOrder id="5">
+            <orderPrice>2700</orderPrice>
+            <customerId>3</customerId>
+        </serviceOrder>
+    </serviceOrders>
+    <orderRentals>
+        <orderRental id="1">
+            <orderPrice>950</orderPrice>
+            <customerId>1</customerId>
+        </orderRental>
+        <orderRental id="2">
+            <orderPrice>450</orderPrice>
+            <customerId>3</customerId>
+        </orderRental>
+        <orderRental id="3">
+            <orderPrice>700</orderPrice>
+            <customerId>5</customerId>
+        </orderRental>
+        <orderRental id="4">
+            <orderPrice>1000</orderPrice>
+            <customerId>2</customerId>
+        </orderRental>
+        <orderRental id="5">
+            <orderPrice>850</orderPrice>
+            <customerId>4</customerId>
+        </orderRental>
+    </orderRentals>
+    <giftCertificates>
+        <giftCertificate id="1">
+            <certificatePrice>2000</certificatePrice>
+            <serviceOrderId>2</serviceOrderId>
+        </giftCertificate>
+        <giftCertificate id="2">
+            <certificatePrice>3000</certificatePrice>
+            <serviceOrderId>1</serviceOrderId>
+        </giftCertificate>
+        <giftCertificate id="3">
+            <certificatePrice>5000</certificatePrice>
+            <serviceOrderId>3</serviceOrderId>
+        </giftCertificate>
+    </giftCertificates>
+    <subscriptions>
+        <subscription id="1">
+            <title>vip</title>
+            <subscriptionPrice>5550</subscriptionPrice>
+            <customerId>3</customerId>
+        </subscription>
+        <subscription id="2">
+            <title>universal</title>
+            <subscriptionPrice>4450</subscriptionPrice>
+            <customerId>4</customerId>
+        </subscription>
+        <subscription id="3">
+            <title>premium</title>
+            <subscriptionPrice>3350</subscriptionPrice>
+            <customerId>2</customerId>
+        </subscription>
+        <subscription id="4">
+            <title>platinum</title>
+            <subscriptionPrice>2250</subscriptionPrice>
+            <customerId>1</customerId>
+        </subscription>
+        <subscription id="5">
+            <title>standart</title>
+            <subscriptionPrice>1150</subscriptionPrice>
+            <customerId>5</customerId>
+        </subscription>
+    </subscriptions>
+</photoStudio>
