@@ -8,12 +8,8 @@ import com.solvd.photostudio.util.ConnectionUtil;
 import java.sql.*;
 import java.util.*;
 
-import static com.solvd.photostudio.util.ConnectionUtil.closePrepareStatement;
-import static com.solvd.photostudio.util.ConnectionUtil.getPrepareStatement;
-
 
 public class SubscriptionDaoImpl implements SubscriptionDao {
-    private PreparedStatement prepareStatement;
 
     public SubscriptionDaoImpl(String host, String name, String password) {
         new ConnectionUtil(host, name, password);
@@ -21,30 +17,25 @@ public class SubscriptionDaoImpl implements SubscriptionDao {
 
     @Override
     public void insert(Subscription subscription) {
-        try {
-            prepareStatement = getPrepareStatement("INSERT INTO subscription "
+        try (PreparedStatement prepareStatement = ConnectionUtil.getPrepareStatement("INSERT INTO subscription "
                     + "(title, subscriptionPrice, customer_id) "
-                    + "VALUES (?,?,?)", Statement.RETURN_GENERATED_KEYS);
+                    + "VALUES (?,?,?)", Statement.RETURN_GENERATED_KEYS)) {
             prepareStatement.setString(1, subscription.getTitle());
             prepareStatement.setString(2, subscription.getSubscriptionPrice());
             prepareStatement.setInt(3, subscription.getCustomerId());
             System.out.println(prepareStatement.execute());
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            closePrepareStatement(prepareStatement);
         }
     }
 
     @Override
     public Optional<Subscription> getById(Integer id) {
-        try {
-            prepareStatement = ConnectionUtil.getPrepareStatement("SELECT * FROM subscription WHERE id = ?");
+        try (PreparedStatement prepareStatement = ConnectionUtil.getPrepareStatement("SELECT * FROM subscription WHERE id = ?")) {
             prepareStatement.setInt(1, id);
             ResultSet result = prepareStatement.executeQuery();
             if (result.next()) {
                 Subscription subscription = getSubscriptionFromResultSet(result);
-                closePrepareStatement(prepareStatement);
                 System.out.println(Optional.of(subscription));
                 return Optional.of(subscription);
             }
@@ -58,15 +49,13 @@ public class SubscriptionDaoImpl implements SubscriptionDao {
     @Override
     public List<Subscription> getAll() {
         List<Subscription> allSubscription = new ArrayList<>();
-        try {
-            prepareStatement = getPrepareStatement("SELECT * FROM subscription",
-                    Statement.RETURN_GENERATED_KEYS);
+        try (PreparedStatement prepareStatement = ConnectionUtil.getPrepareStatement("SELECT * FROM subscription",
+                    Statement.RETURN_GENERATED_KEYS)) {
             ResultSet result = prepareStatement.executeQuery();
             while (result.next()) {
                 Subscription subscription = getSubscriptionFromResultSet(result);
                 allSubscription.add(subscription);
             }
-            closePrepareStatement(prepareStatement);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -75,9 +64,8 @@ public class SubscriptionDaoImpl implements SubscriptionDao {
 
     @Override
     public void update(Subscription subscription, int id) {
-        try {
-            prepareStatement = getPrepareStatement("UPDATE subscription SET orderPrice = ? ," +
-                    " customerId = ? WHERE ID = ? ", Statement.RETURN_GENERATED_KEYS);
+        try (PreparedStatement prepareStatement = ConnectionUtil.getPrepareStatement("UPDATE subscription SET orderPrice = ? ," +
+                    " customerId = ? WHERE ID = ? ", Statement.RETURN_GENERATED_KEYS)) {
             prepareStatement.setString(1, subscription.getTitle());
             prepareStatement.setString(2, subscription.getSubscriptionPrice());
             prepareStatement.setInt(3, subscription.getCustomerId());
@@ -86,23 +74,18 @@ public class SubscriptionDaoImpl implements SubscriptionDao {
             System.out.println(prepareStatement);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            closePrepareStatement(prepareStatement);
         }
     }
 
     @Override
     public void delete(int id) {
-        try {
-            prepareStatement = getPrepareStatement("DELETE FROM subscription " + "WHERE id = ?",
-                    Statement.RETURN_GENERATED_KEYS);
+        try (PreparedStatement prepareStatement = ConnectionUtil.getPrepareStatement("DELETE FROM subscription " + "WHERE id = ?",
+                    Statement.RETURN_GENERATED_KEYS)) {
             prepareStatement.setInt(1, id);
             prepareStatement.execute();
             System.out.println(prepareStatement.execute());
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            closePrepareStatement(prepareStatement);
         }
     }
 

@@ -4,6 +4,7 @@ import com.solvd.photostudio.model.OrderRental;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public enum OrderRentalDataBase {
 
     ORDER_RENTAL_1(1, "2000", 2),

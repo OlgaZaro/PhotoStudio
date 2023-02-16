@@ -8,6 +8,7 @@ import com.solvd.photostudio.json.JsonSerialization;
 import com.solvd.photostudio.model.Customer;
 import com.solvd.photostudio.mybatis.mybatisservise.CustomerService;
 import com.solvd.photostudio.sax.CustomerHandler;
+import com.solvd.photostudio.service.XmlValidator;
 import com.solvd.photostudio.util.PropertiesUtil;
 
 import javax.xml.bind.JAXBException;
@@ -47,5 +48,6 @@ public class Main {
         //dao.insert(new Customer("Jeromy", "Types", "380505554455", "tim@gmail.com"));
         //dao.update(new Customer("Din", "Types", "05088855599", "din@gmail.com"), 7);
         //dao.delete(6);
+        //dao.findByLastName("Jonson");
     }
 }

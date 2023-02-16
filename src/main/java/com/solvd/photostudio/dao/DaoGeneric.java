@@ -3,6 +3,7 @@ package com.solvd.photostudio.dao;
 
 import java.util.*;
 
+
 public interface DaoGeneric<T, V> {
     List<T> getAll();
     void insert(T entity);

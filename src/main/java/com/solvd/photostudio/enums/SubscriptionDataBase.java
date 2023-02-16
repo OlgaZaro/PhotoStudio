@@ -6,6 +6,7 @@ import com.solvd.photostudio.model.Subscription;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public enum SubscriptionDataBase {
 
     VIP(1, "vip", "5550", 3),
@@ -20,7 +21,7 @@ public enum SubscriptionDataBase {
     private final int customerId;
 
 
-    SubscriptionDataBase(int id, String title, String subscriptionPrice, int customerId){
+    SubscriptionDataBase(int id, String title, String subscriptionPrice, int customerId) {
         this.id = id;
         this.title = title;
         this.subscriptionPrice = subscriptionPrice;

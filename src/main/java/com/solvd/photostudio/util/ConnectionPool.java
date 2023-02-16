@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ConnectionPool {
     private final String host;
     private final String name;
@@ -21,7 +22,7 @@ public class ConnectionPool {
         this.connectionPool = connectionPool;
     }
 
-    public String getHOST() { return host; }
+    public String getHost() { return host; }
 
     public String getName() { return name; }
 

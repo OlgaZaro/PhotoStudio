@@ -4,6 +4,7 @@ import com.solvd.photostudio.model.ServiceOrder;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public enum ServiceOrderDataBase {
 
     SERVICE_ORDER_1(1, "1500", 5),

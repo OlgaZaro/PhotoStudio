@@ -36,14 +36,4 @@ public class ConnectionUtil<T> {
         }
         return statement;
     }
-
-    public static void closePrepareStatement(PreparedStatement statement) {
-        if (statement != null) {
-            try {
-                statement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-    }
 }

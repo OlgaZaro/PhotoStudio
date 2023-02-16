@@ -1,6 +1,6 @@
 package com.solvd.photostudio.sax;
 
-import com.solvd.photostudio.util.FilePropertiesUtil;
+import com.solvd.photostudio.util.PropertiesUtil;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 import javax.xml.parsers.SAXParser;
@@ -15,7 +15,7 @@ public class ServiceOrderHandler extends DefaultHandler {
 
     public static void parsing() {
         try {
-            File inputFile = new File(new FilePropertiesUtil("saxServiceOrder").getPath());
+            File inputFile = new File(new PropertiesUtil("saxServiceOrder").getPath());
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
 

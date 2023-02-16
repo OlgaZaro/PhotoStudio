@@ -6,6 +6,7 @@ import com.solvd.photostudio.model.GiftCertificate;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public enum GiftCertificateDataBase {
 
     CERTIFICATE_1(1, "2000", 2),

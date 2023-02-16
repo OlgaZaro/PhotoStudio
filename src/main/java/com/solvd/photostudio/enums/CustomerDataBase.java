@@ -5,6 +5,7 @@ import com.solvd.photostudio.model.Customer;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public enum CustomerDataBase {
 
     JON ( 1,"Jon", "Kennel", "380503344555", "jon@gmail.com"),
